@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using UVote.Models;
 
 namespace UVote.Controllers
 {
+   
     public class CandidateController : Controller
     {
+        DAO dao = new DAO();
+
         // GET: Candidate
         public ActionResult Index()
         {
@@ -28,18 +32,27 @@ namespace UVote.Controllers
 
         // POST: Candidate/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(CandidateModel candidateModel)
         {
-            try
-            {
-                // TODO: Add insert logic here
+            int count = 0;
 
-                return RedirectToAction("Index");
-            }
-            catch
+            if(ModelState.IsValid)
             {
-                return View();
+                count = dao.InsertCandidate(candidateModel);
+                if (count == 1)
+                {
+                    ViewBag.Message = "Candidates Added";
+                    return View("Success");
+                }
+                else
+                {
+                    ViewBag.Message = $"Error {dao.message}!";
+                    return View("Error");
+                }
             }
+            
+                return View(candidateModel);
+            
         }
 
         // GET: Candidate/Edit/5

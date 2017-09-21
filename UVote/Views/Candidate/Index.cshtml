@@ -1,7 +1,36 @@
-﻿
+﻿@model IEnumerable<UVote.Models.CandidateModel>
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h1>Candidates</h1> <!-- Candidate Index-->
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PROBLEMS WITH THIS CODE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
+<div id="CandidatesDiv">
+
+    @foreach (var candidate in CandidateModel) <!--Compiler says that this doesn't exist-->
+    {
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="~/Content/Images/@Candidate.ImageUrl" width="100" height="100" alt="@candidate.Avatar">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Manifesto</h4>
+                <p>
+                    <input type="text" name="manifesto" value=@Candidate.Manifesto />
+                    @Candidate.Manifesto<br />
+                    Manifesto: @Candidate.Manifesto
+                </p>
+                <h4>Previous History</h4>
+                <p>
+                    <input type="text" name="previousHistory" value=@Candidate.PreviousHistory />
+                    @Candidate.PreviousHistory<br />
+                    Manifesto: @Candidate.PreviousHistory
+                </p>
+            </div> 
+        </div>
+    }
+    
+</div>

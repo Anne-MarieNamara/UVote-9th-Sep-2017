@@ -1,7 +1,67 @@
-﻿
+﻿@model UVote.Models.CandidateModel
 @{
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<h2>Create Candidate</h2>
+
+@using (Html.BeginForm("Create", "Candidate", FormMethod.Post))
+{
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(model => model.CandidateId, htmlAttributes: new { @class = "control-label col-md-2"  })
+       <div class="col-md-10">
+           @Html.TextBoxFor(model => model.CandidateId)
+           @Html.ValidationMessageFor(model => model.CandidateId, " ", htmlAttributes: new { @class = "text-danger" })
+       </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.FirstName)
+                    @Html.ValidationMessageFor(model => model.FirstName, " ", htmlAttributes: new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Manifesto, " ", htmlAttributes: new { @class = "text-danger"})
+                        @Html.ValidationMessageFor(model => model.Manifesto, " ", htmlAttributes: new { @class = "text-danger"})
+                    </div>
+                </div>
+
+                <div class="form-horizontal">
+                        @Html.LabelFor(model => model.ImageUrl, " ", htmlAttributes: new {@class = "text-danger" })
+                        <div class="form-group">
+                            @Html.TextBoxFor(model => model.ImageUrl, " ", htmlAttributes: new { @class = "text-danger"})
+                            @Html.ValidationMessageFor(model => model.ImageUrl, " ", htmlAttributes: new { @class = "text-danger" })
+                        </div>
+                </div>
+
+                <div class="form-horizontal">
+                    @Html.LabelFor(model => model.)
+
+                   
+
+
+                </div>
+            </div>
+            <!--To do Previous HIstory, CampaignID,EMployeeID-->
+           
+           
+                
+
+
+
+
+
+
+        </div>
+}
+
+
 

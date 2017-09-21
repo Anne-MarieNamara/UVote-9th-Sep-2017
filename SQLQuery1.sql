@@ -1,11 +1,8 @@
-﻿CREATE PROC uspInsertCampaign
-@roleTitle varchar (50),
-@roleDetails varchar (50),
-@officeTerm varchar (50),
-@campaignStart DATE,
-@CampaignEnd DATE,
-@EmployeeId varchar (8)
+﻿CREATE PROC uspGetCampaigns
 AS
-INSERT INTO Campaign VALUES (
-@roleTitle, @roleDetails, @officeTerm, @campaignStart, @campaignEnd, @employeeId
-)
+SELECT CampaignID, RoleTitle, CampaignStart, CampaignEnd
+FROM Campaign
+WHERE CampaignStart > CAST (GETDATE() AS DATE)
+
+ 
+ exec uspGetCampaigns

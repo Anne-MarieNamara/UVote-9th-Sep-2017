@@ -130,13 +130,38 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
-    <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\ActiveCampaignsOrangeSquare.png" />
-    <Content Include="Content\Images\StudentsOrangeSquare.png" />
-    <Content Include="Content\Styles.css" />
+    <Content Include="Content\Images\Arya200x200.png" />
+    <Content Include="Content\Images\Beric200x200.png" />
+    <Content Include="Content\Images\Bran200x200.png" />
+    <Content Include="Content\Images\Brienne200x200.png" />
+    <Content Include="Content\Images\Bronn200x200.png" />
+    <Content Include="Content\Images\CandidateOrangeSquare.jpg" />
+    <Content Include="Content\Images\Cersei200x200.png" />
+    <Content Include="Content\Images\ColouredHandsBanner.jpg" />
+    <Content Include="Content\Images\Daenerys200x200.png" />
+    <Content Include="Content\Images\electronicVotingBlueButton.png" />
+    <Content Include="Content\Images\Gendry200x200.png" />
+    <Content Include="Content\Images\Grey200x200.png" />
+    <Content Include="Content\Images\handBallotBlue.png" />
+    <Content Include="Content\Images\handsBanner960x250.jpg" />
+    <Content Include="Content\Images\Jaime200x200.png" />
+    <Content Include="Content\Images\Missendei.png" />
+    <Content Include="Content\Images\penguinAdmin.png" />
+    <Content Include="Content\Images\retro.png" />
+    <Content Include="Content\Images\Sam200x200.png" />
+    <Content Include="Content\Images\Sansa200x200.png" />
+    <Content Include="Content\Images\SaveTrees.png" />
+    <Content Include="Content\Images\SerDavos.png" />
+    <Content Include="Content\Images\Tyrion200x200.png" />
+    <Content Include="Content\Images\voteBlueButtons.png" />
+    <Content Include="Content\StylesSheet.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -149,6 +174,11 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -171,6 +201,7 @@
     <Compile Include="Models\AdminModel.cs" />
     <Compile Include="Models\CampaignModel.cs" />
     <Compile Include="Models\CandidateModel.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\DAO.cs" />
     <Compile Include="Models\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -220,6 +251,8 @@
     <Content Include="Views\Admin\Success.cshtml" />
     <Content Include="Views\Campaign\Success.cshtml" />
     <Content Include="Views\Campaign\Error.cshtml" />
+    <Content Include="Views\Candidate\Success.cshtml" />
+    <Content Include="Views\Candidate\Error.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

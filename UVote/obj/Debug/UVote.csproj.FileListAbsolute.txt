@@ -71,7 +71,6 @@ C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\bin\Sys
 C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\bin\System.Web.Webpages.Razor.xml
 C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\bin\System.Web.Helpers.xml
 C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\bin\System.Web.Mvc.xml
-C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\obj\Debug\UVote.csprojResolveAssemblyReference.cache
 C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\obj\Debug\UVote.csproj.CoreCompileInputs.cache
 C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\obj\Debug\UVote.dll
 C:\Users\Anne-Marie\Documents\DBS\Web and Cloud\UVote 9th Sep 2017\UVote\obj\Debug\UVote.pdb

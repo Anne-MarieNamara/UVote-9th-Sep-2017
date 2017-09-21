@@ -3,7 +3,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Index</h2> <!--This is Admin Index-->
 
 <div class="col-md-4">
     <ul class="nav nav-pills nav-stacked">
@@ -12,16 +12,24 @@
         <li role="presentation">@Html.ActionLink("Add student", "Create", "Student")</li>
     </ul>
 </div>
-<div class="col-md-4">
 
-    <a href="#" class="thumbnail">
+
+<div class="col-md-4">
+        <a href="/Campaign/Index" class="thumbnail">
         <img src="~/Content/Images/ActiveCampaignsOrangeSquare.png" alt="Active Campaigns">
-    </a>
+        </a>
 </div>
 
 <div class="col-md-4">
-
-    <a href="#" class="thumbnail">
-        <img src="~/Content/Images/StudentsOrangeSquare.png" alt="Active Campaigns">
+    <a href="/Candidate/Index" class="thumbnail">
+        <img src="~/Content/Images/CandidateOrangeSquare.jpg" alt="List of Candidates">
     </a>
+</div>
+
+<div id="penguin">
+    <div class="col-md-4">
+        <a href="#">
+            <img src="~/Content/Images/penguinAdmin.png" alt="Admin penguin cartoon" width="200" height="200" />
+        </a>
+    </div>
 </div>
